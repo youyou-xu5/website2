@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ValueMyStuff - Online Art, Antique & Collectable Appraisals</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../static/css/common.css">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <style>
+    .button-desc {
+      background-color: #fdf5ed;
+      text-align: center;
+      font-weight: 700;
+      font-size: 18px;
+      color: #fd7c00;
+      border-radius: 30.5px;
+      display: inline-block;
+      padding: 8px 24px;
+    }
+
+    .primary-button {
+      background-color: #49c5b6;
+      color: #fff;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: 700;
+    }
+  </style>
+  <style>
+    .container-1 {
+      background-image: linear-gradient(180deg, #f3f6f6, #fff);
+      width: 100%;
+      text-align: center;
+      margin-top: 80px;
+      height: 258px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container-1 h1 {
+      font-size: 40px;
+    }
+
+    .container-1 p {
+      font-size: 22px;
+    }
+
+    .container-2 {
+      padding: 0px 34px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 130px;
+    }
+
+    .container-2 .item {
+      border-top: 2px solid #e6f8f6;
+      border-left: 2px solid #e6f8f6;
+      border-right: 2px solid #e6f8f6;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding-top: 46px;
+      padding-bottom: 0;
+      position: relative;
+    }
+
+    .container-2 .item h2 {
+      font-size: 26px;
+      text-align: center;
+    }
+
+    .container-2 .item p {
+      margin-top: 20px;
+      padding: 0px 20px;
+    }
+
+    .container-2 .item .text {
+      margin-top: 16px;
+      color: #49c5b6;
+      text-align: center;
+    }
+
+    .container-2 .item .step {
+      color: #fd7c00;
+      font-weight: 700;
+      padding: 8px 24px;
+      border-radius: 30.5px;
+      background-color: #fdf5ed;
+      position: absolute;
+      top: -20px;
+      right: 50%;
+      transform: translateX(50%);
+      font-size: 18px;
+    }
+
+    .container-2 .item img {
+      margin-top: 50px;
+      width: 100%;
+      height: 204px;
+    }
+
+    .container-3 {
+      padding: 48px 24px;
+      background-color: #f3f6f6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container-3 h2 {
+      margin-bottom: 24px;
+      font-size: 22px;
+      color: #49c5b6;
+      font-weight: 600;
+    }
+
+    .container-3 a {
+      background-color: #49c5b6;
+      color: #fff;
+      width: 280px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* .container-4{
+        padding-top: 88px;
+        margin-bottom: 88px;
+      } */
+    .container-4 {
+      display: flex;
+      padding: 64px 60px;
+    }
+
+    .container-4 img {
+      flex: 1;
+      width: 484px;
+      height: 510px;
+    }
+
+    .container-4 .right {
+      flex: 1;
+      padding-left: 64px;
+    }
+
+    .container-4 .right h2 {
+      margin: 16px 0px;
+      font-size: 30px;
+    }
+
+    .container-4 .right p {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+
+    .container-4 .right .list {
+      display: flex;
+      width: 300px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .container-4 .right .list .item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .container-4 .right .list .item img {
+      width: 19px;
+      height: 19px;
+    }
+
+    .container-4 .right .button {
+      margin-top: 40px;
+      width: 480px;
+      height: 50px;
+      background-color: #49c5b6;
+      color: #fff;
+      border-radius: 2px;
+      font-family: Raleway, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container-5 {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    .container-5 .box {
+      width: 1200px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .container-5 .box .left .desc {
+      color: #fd7c00;
+      font-size: 18px;
+      margin-left: 12px;
+      font-weight: 700;
+    }
+
+    .container-5 .box .left h2 {
+      font-size: 40px;
+      margin: 16px 0;
+    }
+
+    .container-5 .box .left p {
+      font-size: 22px;
+      font-weight: 500;
+      width: 584px;
+    }
+
+    .container-5 .box .left .list {
+      margin-top: 24px;
+      align-items: center;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .container-5 .box .left .list .item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .container-5 .box .left .list .item img {
+      width: 23px;
+      height: 23px;
+    }
+
+    .container-5 .box .right {
+      width: 384px;
+      height: 624px;
+    }
+
+    .container-5 .box .right img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .container-6 {
+      padding: 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container-6 .wrapper {
+      max-width: 800px;
+    }
+
+    .container-6 .wrapper .box-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container-6 .wrapper .box-1 .text {
+      width: 269px;
+      height: 42px;
+      font-size: 18px;
+      border-radius: 35px;
+      padding: 8px 24px;
+      background-color: #fdf5ed;
+      color: #fd7c00;
+    }
+
+    .container-6 .wrapper .box-1 h2 {
+      font-size: 40px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .container-6 .wrapper .box-1 .content {
+      padding: 88px 40px;
+      border-radius: 20px;
+      border: 2px solid #e6f8f6;
+      text-align: center;
+      background-color: #fff;
+      width: 384px;
+    }
+
+    .container-7 {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container-7 .box {
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container-7 .box h2 {
+      margin: 16px 0;
+      font-size: 40px;
+    }
+
+    .container-7 .box p {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    .container-7 .box .list {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .container-7 .box .list .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem .5rem;
+      border: 2px solid #e6f8f6;
+      background-color: #fff;
+      border-radius: 20px;
+      width: 250px;
+    }
+
+    .container-7 .box .list .item .item-1 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .container-7 .box .list .item-2 {
+      color: #49c5b6;
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .container-7 .box .list .item-3 {
+      font-size: 500;
+    }
+
+    .container-8 {
+      background-color: #f3f6f6;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 50px 0;
+    }
+
+    .container-8 .wrapper {
+      max-width: 992px;
+      /* padding: 3rem 0; */
+    }
+
+    .container-8 .wrapper .title {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: .25rem;
+    }
+
+    .container-8 .wrapper .desc {
+      margin-bottom: 1rem;
+    }
+
+    .container-8 .wrapper .box {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+
+    .container-8 .wrapper .box img {
+      width: 100%;
+      height: 319px;
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../img/logo.png" alt="ValueMyStuff" class="logo" />
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-link">HOW IT WORKS</a></li>
+          <li><a href="#" class="nav-link">CATEGORIES</a></li>
+          <li><a href="#" class="nav-link">PRICING</a></li>
+          <li><a href="#" class="nav-link">BLOG</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button class="btn-secondary">FREE APPRAISAL</button>
+          <button class="btn-outline">REGISTER LOG IN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container-1">
+    <h1>How it Works</h1>
+    <p>Step-by-step guide to submitting your appraisal</p>
+  </div>
+  <div class="container-2">
+    <div class="item">
+      <h2>Upload a photo of your item</h2>
+      <p>Upload your photos with any information you have about your item.</p>
+      <div class="text">See photography tips</div>
+      <div class="step">Step 1</div>
+      <img src="./assets/img-1.png" />
+    </div>
+    <div class="item">
+      <h2>Upload a photo of your item</h2>
+      <p>Upload your photos with any information you have about your item.</p>
+      <div class="text">See photography tips</div>
+      <div class="step">Step 2</div>
+      <img src="./assets/img-2.png" />
+
+    </div>
+    <div class="item">
+      <h2>Upload a photo of your item</h2>
+      <p>Upload your photos with any information you have about your item.</p>
+      <div class="text">See photography tips</div>
+      <div class="step">Step 3</div>
+      <img src="./assets/img-3.png" />
+    </div>
+  </div>
+  <div class="container-3">
+    <h2>Receive an expert appraisal in just 48 hours for $28 or less!</h2>
+    <a>Try it now</a>
+  </div>
+  <div class="container-4">
+    <img src="./assets/img-4.png" />
+    <div class="right">
+      <div class="button-desc">WHAT YOU WILL GET </div>
+      <h2>Appraisal Certificate</h2>
+      <p>We provide you with a printable PDF certificate and online record of all your appraisals</p>
+      <div class="list">
+        <div class="item">
+          <img src="./assets/check-icon.png" />
+          <span>Attribution</span>
+        </div>
+        <div class="item">
+          <img src="./assets/check-icon.png" />
+          <span>Attribution</span>
+        </div>
+        <div class="item">
+          <img src="./assets/check-icon.png" />
+          <span>Attribution</span>
+        </div>
+        <div class="item">
+          <img src="./assets/check-icon.png" />
+          <span>Attribution</span>
+        </div>
+        <div class="item">
+          <img src="./assets/check-icon.png" />
+          <span>Attribution</span>
+        </div>
+        <div class="item">
+          <img src="./assets/check-icon.png" />
+          <span>Attribution</span>
+        </div>
+      </div>
+      <div class="button">View sample appraisal</div>
+    </div>
+  </div>
+  <div class="container-5">
+    <div class="box">
+      <div class="left">
+        <div class="button-desc">WHAT YOU WILL GET</div>
+        <h2>Online Account</h2>
+        <p>Store your appraisals in an easy and secure account, combine reports and much more.</p>
+        <div class="list">
+          <div class="item">
+            <img src="./assets/check-icon.png" />
+            <span>Attribution</span>
+          </div>
+          <div class="item">
+            <img src="./assets/check-icon.png" />
+            <span>Attribution</span>
+          </div>
+        </div>
+        <div class="list">
+          <div class="item">
+            <img src="./assets/check-icon.png" />
+            <span>Attribution</span>
+          </div>
+          <div class="item">
+            <img src="./assets/check-icon.png" />
+            <span>Attribution</span>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="item">
+            <img src="./assets/check-icon.png" />
+            <span>Attribution</span>
+          </div>
+          <div class="item">
+            <img src="./assets/check-icon.png" />
+            <span>Attribution</span>
+          </div>
+        </div>
+        <div class="button-desc">
+          View sample account</div>
+
+      </div>
+      <div class="right">
+        <img src="./assets/img-5.avif" />
+      </div>
+    </div>
+  </div>
+  <div class="container-3">
+    <h2>Receive an expert appraisal in just 48 hours for $28 or less!</h2>
+    <a>Try it now</a>
+  </div>
+
+  </div>
+  <div class="container-6">
+    <div class="wrapper">
+      <div class="box-1">
+        <div class="button-desc">WHAT YOU CAN GET</div>
+        <h2>Want to sell your treasure?</h2>
+        <div class="content">
+          <h3 style="font-weight: 600;font-size:26px;margin-bottom: 16px;">Sell it!</h3>
+          <p style="font-size: 16px;font-weight:500">At Value My Stuff, we aim to provide comprehensive valuation
+            services to meet your needs. Having received your online
+            appraisal, if you are interested in selling your items, we can help with the sale. For items with a lower
+            value, we
+            recommend consulting a reputable local auction house or exploring online selling platforms. However, if you
+            have items
+            with an estimated auction value exceeding £1,000, €1,000, or $10,000 SEK, we invite you to contact us at
+            info@valuemystuff.com. Through our extensive auction house affiliate network, we can offer specialized
+            assistance to
+            help you achieve the best possible outcome for your valuable items.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container-7">
+    <div class="box">
+      <div class="button-desc">Pricing plans</div>
+      <h2>We offer a range of appraisal prices</h2>
+      <p>The more items you value, the lower the price per credit! We use credits as payment when submitting an item for
+        appraisal. We offer both single credits and batches of credits at discounted prices</p>
+      <div class="list">
+        <div class="item">
+          <div class="item-1">1 credit</div>
+          <div class="item-2">$ 28</div>
+          <div class="item-3">$28 / credit</div>
+        </div>
+        <div class="item">
+          <div class="item-1">1 credit</div>
+          <div class="item-2">$ 28</div>
+          <div class="item-3">$28 / credit</div>
+        </div>
+        <div class="item">
+          <div class="item-1">1 credit</div>
+          <div class="item-2">$ 28</div>
+          <div class="item-3">$28 / credit</div>
+        </div>
+      </div>
+      <div class="primary-button" style="margin-top:36px">See pricing plan</div>
+    </div>
+  </div>
+  <div class="container-7">
+    <div class="box">
+      <div class="button-desc">SECURE & PRIVATE</div>
+      <h2>We keep things secure because your privacy matters</h2>
+      <p>Your personal details are protected at all times. This site uses an SSL Certificate to ensure your data is
+        secure. We
+        promise to keep your details safe and secure and not to share them with others.
+      </p>
+      <p style="margin-top:30px">Have more questions about our services? Click here to see <a
+          style="color:#49c5b6">FAQ</a> or Contact us for support
+      </p>
+    </div>
+  </div>
+  <div class="container-8">
+    <div class="wrapper">
+      <p class="title">Interested in selling your items? We can help you with that!</p>
+      <p class="desc">Read the article below to find out how you can sell your items through one of our affiliate
+        auction
+        houses or
+        dealers.
+      </p>
+      <div class="box">
+        <img src="./assets/img-6.avif" />
+        <div style="width:45%;margin-left: 50px;">
+          Although Value My Stuff’s primary service is to value items, we also offer to help our customers to sell their
+          items.
+          Read below for more information.
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="footer">
+    <div class="inner">
+      <div class="footer-top">
+        <div class="social">
+          <h4>FOLLOW US</h4>
+          <div class="icons">
+            <img src="https://barnebys-assets.imgix.net/images/vms-social-facebook.svg" alt="">
+            <img src="https://barnebys-assets.imgix.net/images/vms-social-instagram.svg" alt="">
+            <img src="https://barnebys-assets.imgix.net/images/vms-social-twitter.svg" alt="">
+            <img src="https://barnebys-assets.imgix.net/images/vms-social-yt.svg" alt="">
+          </div>
+        </div>
+        <div class="apps">
+          <h4>DOWNLOAD OUR APP</h4>
+          <div class="buttons">
+            <img src="https://barnebys-assets.imgix.net/images/vms-store-app-store.svg" alt="App Store">
+            <img src="https://barnebys-assets.imgix.net/images/vms-store-google-play.svg" alt="Google Play">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="links">
+          <a href="#">CONTACT US</a>
+          <a href="#">TERMS OF USE</a>
+          <a href="#">FAQ</a>
+          <a href="#">PRIVACY POLICY</a>
+          <a href="#">COOKIE PREFERENCES</a>
+          <a href="#" class="flag">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag">
+            UNITED STATES
+          </a>
+        </div>
+        <div class="copyright">
+          <img src="https://barnebys-assets.imgix.net/images/a-part-of-barnebys-group-white.svg" alt="">
+          <p>©2025 VMS Grosvenor Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

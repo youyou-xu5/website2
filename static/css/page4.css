@@ -1,0 +1,197 @@
+.page4 {
+  background: #f9fbfb;
+}
+.categories-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+.categories-section .categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.categories-section .title {
+  font-weight: bold;
+  font-size: 40px;
+  color: #262626;
+  margin-bottom: 8px;
+}
+.categories-section .description {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+  max-width: 800px;
+  color: #000000;
+  margin: 0 auto 40px;
+  margin-bottom: 80px;
+}
+.categories-section .stats {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.categories-section .stats .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories-section .stats .stat-item img {
+  width: 22px;
+}
+.categories-section .stats .stat-item .number {
+  font-size: 64px;
+  font-weight: bold;
+  color: #52bfc5;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.categories-section .stats .stat-item .label {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #4a4a4a;
+}
+.categories-grid {
+  background: #f8fafb;
+  padding: 30px 20px;
+}
+.categories-grid .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.categories-grid .category-item {
+  background-color: #f1f5f5;
+  border-radius: 20px;
+  position: relative;
+  padding: 64px 56px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  cursor: pointer;
+  height: 192px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  background-size: 166px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.categories-grid .category-item:hover {
+  box-shadow: 2px 2px 6px 1px hsla(0, 0%, 59.2%, 0.4);
+}
+.categories-grid .category-item h2 {
+  flex: 1;
+  font-size: 26px;
+  margin-bottom: 32px;
+}
+.categories-grid .category-item.african {
+  background-image: url('https://images.prismic.io/valuemystuff/1b637b6307560164c8b5e7eff5e1f688ab8aa7da_african-pre-columbian--indigenous-art-all.png?auto=compress,format)');
+}
+.categories-grid .category-item.collectables {
+  background-image: url(https://images.prismic.io/valuemystuff/eb0fa157-33d4-4627-8c9f-0b9e7f0ff2f7_Collectibles+%26+Memorabilia+%28All%29.png?auto=compress,format);
+}
+.categories-grid .category-item.antiques {
+  background-image: url(https://images.prismic.io/valuemystuff/17d00154-8789-447e-bc68-539e001a2e27_Antiques+%26+Decorative+Art+%28All%29.png?auto=compress,format);
+}
+.categories-grid .category-item.furniture {
+  background-image: url(https://images.prismic.io/valuemystuff/2bc2e6c8-58ae-4af0-87b8-e3952983b09d_Furniture+%26+Design+%28All%29.png?auto=compress,format);
+}
+.categories-grid .category-item.asian {
+  background-image: url(https://images.prismic.io/valuemystuff/887ea861-b712-41a6-9743-76d45e035c1e_Asian+%26+Middle+Eastern+Art+%28All%29.png?auto=compress,format);
+}
+.categories-grid .category-item.jewelry {
+  background-image: url(https://images.prismic.io/valuemystuff/8fdbeb75-da23-4c4c-a098-89603b7074ec_Jewelry%2C+Gems%2C+Clocks+%26+Watches+%28All%29.png?auto=compress,format);
+}
+.categories-grid .category-item.cars {
+  background-image: url(https://images.prismic.io/valuemystuff/46d107a1-71c9-4711-b2ec-a3194c914699_Cars%2C+Wine+%26+Luxury+Goods+%28All%29.png?auto=compress,format);
+}
+.categories-grid .category-item.finearts {
+  background-image: url(https://images.prismic.io/valuemystuff/29d9da75-0fde-441c-bba6-57e719a394d5_Paintings%2C+Drawings+%26+Prints+%28All%29.png?auto=compress,format);
+}
+.categories-grid .svg_icon_box {
+  background-color: #dfdfdf;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  justify-content: center;
+}
+.categories-grid .svg_icon_box .svg_icon {
+  width: 10.5px;
+  color: #979797;
+}
+.part03 {
+  padding-top: 102px;
+  margin-bottom: 120px;
+}
+.part03 .part03-top {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.part03 .part03-top-title {
+  font-size: 30px;
+  color: #262626;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+.part03 .part03-top-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #262626;
+}
+.part03 .part03-top-d {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+.part03 .part03-bottom {
+  margin: 0 225px;
+}
+.part03 .part03-list {
+  display: flex;
+  justify-content: space-between;
+}
+.part03 .part03-list .item_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.part03 .part03-list .item_body .img {
+  height: 61px;
+  margin-bottom: 4px;
+}
+.part03 .part03-list .item_body .title {
+  margin-bottom: 4px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.part03 .part03-list .item_body .dec {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.part03 .part04_btn {
+  padding: 8px 20px;
+  background-color: #49c5b6;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  width: fit-content;
+  margin: 56px auto;
+}
+.part03 .part04_btn a {
+  font-size: 14px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #fff;
+}

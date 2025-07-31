@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+  <g data-name="Facebook">
+    <path d="M0 0h40v40H0z" fill="none"/>
+    <path d="M24.283 20.007h-2.8V30h-4.155v-9.993h-1.975v-3.532h1.975v-2.286a3.893 3.893 0 0 1 4.19-4.191l3.077.012v3.428h-2.233a.845.845 0 0 0-.882.962v2.075h3.164z" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
